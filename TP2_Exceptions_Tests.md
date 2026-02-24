@@ -40,6 +40,7 @@ public class LibraryTest {
     -   LibraryException
     -   BookNotFoundException
     -   DuplicateBookException
+-   Changer la structure du projet et y ajouter Gradle
 
 ## Contraintes Techniques
 
