@@ -136,4 +136,28 @@ public class Library {
     public List<Book> getAllBooks() {
         return List.copyOf(books);
     }
+
+    /**
+     * Retourne la liste des livres triés par titre (ordre alphabétique).
+     * Utilise un Stream pour produire la liste et la méthode sort() pour trier.
+     *
+     * @return Liste de livres triés par titre
+     */
+    public List<Book> getBooksSortedByTitle() {
+        List<Book> sorted = books.stream().collect(Collectors.toList());
+        sorted.sort(Book.TITLE_COMPARATOR);
+        return List.copyOf(sorted);
+    }
+
+    /**
+     * Retourne la liste des livres triés par auteur (ordre alphabétique).
+     * Utilise un Stream pour produire la liste et la méthode sort() pour trier.
+     *
+     * @return Liste de livres triés par auteur
+     */
+    public List<Book> getBooksSortedByAuthor() {
+        List<Book> sorted = books.stream().collect(Collectors.toList());
+        sorted.sort(Book.AUTHOR_COMPARATOR);
+        return List.copyOf(sorted);
+    }
 }

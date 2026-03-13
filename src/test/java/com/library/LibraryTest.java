@@ -95,6 +95,34 @@ public class LibraryTest {
     }
 
     @Test
+    void shouldReturnBooksSortedByTitle() throws DuplicateBookException {
+        // Ajout dans un ordre non trié
+        library.addBook(book2);
+        library.addBook(book3);
+        library.addBook(book1);
+
+        List<Book> sorted = library.getBooksSortedByTitle();
+
+        assertEquals("Clean Code", sorted.get(0).getTitle());
+        assertEquals("Effective Java", sorted.get(1).getTitle());
+        assertEquals("Java Concurrency", sorted.get(2).getTitle());
+    }
+
+    @Test
+    void shouldReturnBooksSortedByAuthor() throws DuplicateBookException {
+        // Ajout dans un ordre non trié
+        library.addBook(book1);
+        library.addBook(book3);
+        library.addBook(book2);
+
+        List<Book> sorted = library.getBooksSortedByAuthor();
+
+        assertEquals("Joshua Bloch", sorted.get(0).getAuthor());
+        assertEquals("Joshua Bloch", sorted.get(1).getAuthor());
+        assertEquals("Robert Martin", sorted.get(2).getAuthor());
+    }
+
+    @Test
     void shouldReturnEmptyListWhenAuthorNotFound() throws DuplicateBookException {
         library.addBook(book1);
 

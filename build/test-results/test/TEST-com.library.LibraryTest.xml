@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.library.LibraryTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2026-03-13T08:28:37" hostname="codespaces-ff90c6" time="0.211">
+  <properties/>
+  <testcase name="shouldReturnBooksSortedByAuthor()" classname="com.library.LibraryTest" time="0.032"/>
+  <testcase name="shouldFindBook()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldFindBooksByAuthor()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowIllegalArgumentExceptionWhenAddingNullBook()" classname="com.library.LibraryTest" time="0.004"/>
+  <testcase name="shouldMaintainUnicityOfIsbn()" classname="com.library.LibraryTest" time="0.012"/>
+  <testcase name="shouldReturnFalseWhenRemovingNonExistentBook()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldAddBook()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowBookNotFoundExceptionWhenTitleNotFound()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldReturnFalseWhenRemovingNullBook()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldReturnUnmodifiableList()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldHandleMultipleBooksCorrectly()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldRemoveBookByIsbn()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="[1] Clean Code, Robert Martin, 2008, 978-0132350884" classname="com.library.LibraryTest" time="0.028"/>
+  <testcase name="[2] Effective Java, Joshua Bloch, 2018, 978-0134685991" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="[3] Java Concurrency, Joshua Bloch, 2006, 978-0321349606" classname="com.library.LibraryTest" time="0.0"/>
+  <testcase name="shouldRemoveBook()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldFindBookByIsbn()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldReturnEmptyListWhenAuthorNotFound()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowBookNotFoundExceptionWhenIsbnNotFound()" classname="com.library.LibraryTest" time="0.005"/>
+  <testcase name="shouldThrowBookNotFoundExceptionWhenTitleIsNull()" classname="com.library.LibraryTest" time="0.0"/>
+  <testcase name="shouldReturnEmptyListWhenAuthorIsNull()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldReturnBooksSortedByTitle()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="[1] 978-0132350884" classname="com.library.LibraryTest" time="0.003"/>
+  <testcase name="[2] 978-0134685991" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="[3] 978-0321349606" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowBookNotFoundExceptionWhenIsbnIsNull()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldCorrelateRemoveByIsbnAndRemoveByObject()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowBookNotFoundExceptionWhenLibraryIsEmpty()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldReturnFalseWhenRemovingByNullIsbn()" classname="com.library.LibraryTest" time="0.001"/>
+  <testcase name="shouldThrowDuplicateBookExceptionWhenAddingBookWithSameIsbn()" classname="com.library.LibraryTest" time="0.002"/>
+  <testcase name="shouldReturnFalseWhenRemovingByInvalidIsbn()" classname="com.library.LibraryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Book {
 
     private String title;
@@ -52,5 +54,29 @@ public class Book {
     @Override
     public int hashCode() {
         return isbn.hashCode();
+    }
+
+    // Comparateurs pour trier des listes de livres
+    public static final Comparator<Book> TITLE_COMPARATOR = new TitleComparator();
+    public static final Comparator<Book> AUTHOR_COMPARATOR = new AuthorComparator();
+
+    private static class TitleComparator implements Comparator<Book> {
+        @Override
+        public int compare(Book o1, Book o2) {
+            if (o1 == o2) return 0;
+            if (o1 == null) return -1;
+            if (o2 == null) return 1;
+            return o1.getTitle().compareTo(o2.getTitle());
+        }
+    }
+
+    private static class AuthorComparator implements Comparator<Book> {
+        @Override
+        public int compare(Book o1, Book o2) {
+            if (o1 == o2) return 0;
+            if (o1 == null) return -1;
+            if (o2 == null) return 1;
+            return o1.getAuthor().compareTo(o2.getAuthor());
+        }
     }
 }

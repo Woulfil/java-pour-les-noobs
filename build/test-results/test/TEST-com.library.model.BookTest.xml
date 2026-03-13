@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.library.model.BookTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-03-13T08:28:37" hostname="codespaces-ff90c6" time="0.059">
+  <properties/>
+  <testcase name="shouldBeEqualWhenIsbnIsSame()" classname="com.library.model.BookTest" time="0.0"/>
+  <testcase name="shouldNotBeEqualToNull()" classname="com.library.model.BookTest" time="0.003"/>
+  <testcase name="shouldNotBeEqualToDifferentType()" classname="com.library.model.BookTest" time="0.0"/>
+  <testcase name="[1] Clean Code, Robert Martin, 2008, 978-0132350884" classname="com.library.model.BookTest" time="0.001"/>
+  <testcase name="[2] Effective Java, Joshua Bloch, 2018, 978-0134685991" classname="com.library.model.BookTest" time="0.001"/>
+  <testcase name="[3] Java Concurrency, Joshua Bloch, 2006, 978-0321349606" classname="com.library.model.BookTest" time="0.003"/>
+  <testcase name="shouldReturnCorrectToString()" classname="com.library.model.BookTest" time="0.023"/>
+  <testcase name="shouldCreateBookWithAllFields()" classname="com.library.model.BookTest" time="0.001"/>
+  <testcase name="shouldHaveDifferentHashCodeWhenIsbnIsDifferent()" classname="com.library.model.BookTest" time="0.0"/>
+  <testcase name="shouldNotBeEqualWhenIsbnIsDifferent()" classname="com.library.model.BookTest" time="0.001"/>
+  <testcase name="shouldHaveImmutableIsbn()" classname="com.library.model.BookTest" time="0.001"/>
+  <testcase name="shouldHaveSameHashCodeWhenIsbnIsSame()" classname="com.library.model.BookTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

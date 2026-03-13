@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Library {
 
@@ -51,26 +52,33 @@ public class Library {
         if (title == null) {
             return null;
         }
-        for (Book book : books) {
-            if (title.equals(book.getTitle())) {
-                return book;
-            }
-        }
-        return null;
+        return books.stream()
+                .filter(book -> title.equals(book.getTitle()))
+                .findFirst()
+                .orElse(null);
     }
 
     // TODO 6 (suite) : Rechercher un livre par auteur
     public List<Book> findBooksByAuthor(String author) {
-        List<Book> results = new ArrayList<>();
         if (author == null) {
-            return results;
+            return List.of();
         }
-        for (Book book : books) {
-            if (author.equals(book.getAuthor())) {
-                results.add(book);
-            }
-        }
-        return results;
+        return books.stream()
+                .filter(book -> author.equals(book.getAuthor()))
+                .collect(Collectors.toList());
+    }
+
+    // TP3 : Retourner une liste triée de livres
+    public List<Book> getBooksSortedByTitle() {
+        List<Book> sorted = books.stream().collect(Collectors.toList());
+        sorted.sort(Book.TITLE_COMPARATOR);
+        return sorted;
+    }
+
+    public List<Book> getBooksSortedByAuthor() {
+        List<Book> sorted = books.stream().collect(Collectors.toList());
+        sorted.sort(Book.AUTHOR_COMPARATOR);
+        return sorted;
     }
 
     // TODO 6 (suite) : Rechercher un livre par ISBN
