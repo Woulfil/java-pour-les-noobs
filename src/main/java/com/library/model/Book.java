@@ -1,5 +1,7 @@
 package com.library.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Comparator;
 
 /**
@@ -18,7 +20,12 @@ public class Book {
      * @param year Année de publication
      * @param isbn ISBN du livre (immuable)
      */
-    public Book(String title, String author, int year, String isbn) {
+    @JsonCreator
+    public Book(
+            @JsonProperty("title") String title,
+            @JsonProperty("author") String author,
+            @JsonProperty("year") int year,
+            @JsonProperty("isbn") String isbn) {
         this.title = title;
         this.author = author;
         this.year = year;
