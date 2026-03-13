@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.library.exception.ExceptionHierarchyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-03-13T08:59:36" hostname="codespaces-ff90c6" time="0.008">
+  <properties/>
+  <testcase name="shouldHaveCorrectExceptionMessage()" classname="com.library.exception.ExceptionHierarchyTest" time="0.0"/>
+  <testcase name="shouldSupportCause()" classname="com.library.exception.ExceptionHierarchyTest" time="0.001"/>
+  <testcase name="shouldThrowDuplicateBookExceptionAsLibraryException()" classname="com.library.exception.ExceptionHierarchyTest" time="0.001"/>
+  <testcase name="shouldThrowLibraryException()" classname="com.library.exception.ExceptionHierarchyTest" time="0.003"/>
+  <testcase name="shouldThrowBookNotFoundExceptionAsLibraryException()" classname="com.library.exception.ExceptionHierarchyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

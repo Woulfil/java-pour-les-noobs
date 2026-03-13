@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.library.controller.BookControllerIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-13T08:59:34" hostname="codespaces-ff90c6" time="1.807">
+  <properties/>
+  <testcase name="shouldAddAndListBooksSortedByTitle()" classname="com.library.controller.BookControllerIntegrationTest" time="1.309"/>
+  <testcase name="shouldDeleteBookByIsbn()" classname="com.library.controller.BookControllerIntegrationTest" time="0.026"/>
+  <system-out><![CDATA[08:59:31.442 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.library.controller.BookControllerIntegrationTest]: BookControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:59:31.618 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.library.LibraryApplication for test class com.library.controller.BookControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.8)
+
+2026-03-13T08:59:32.763Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : Starting BookControllerIntegrationTest using Java 17.0.18 with PID 34261 (started by codespace in /workspaces/java-pour-les-noobs)
+2026-03-13T08:59:32.765Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T08:59:34.372Z  INFO 34261 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-13T08:59:34.374Z  INFO 34261 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-13T08:59:34.377Z  INFO 34261 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-13T08:59:34.421Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : Started BookControllerIntegrationTest in 2.653 seconds (process running for 4.948)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.8)
+
+2026-03-13T08:59:35.806Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : Starting BookControllerIntegrationTest using Java 17.0.18 with PID 34261 (started by codespace in /workspaces/java-pour-les-noobs)
+2026-03-13T08:59:35.806Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : No active profile set, falling back to 1 default profile: "default"
+2026-03-13T08:59:36.206Z  INFO 34261 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-13T08:59:36.206Z  INFO 34261 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-13T08:59:36.207Z  INFO 34261 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-13T08:59:36.215Z  INFO 34261 --- [    Test worker] c.l.c.BookControllerIntegrationTest      : Started BookControllerIntegrationTest in 0.463 seconds (process running for 6.743)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

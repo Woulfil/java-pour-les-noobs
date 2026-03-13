@@ -1,21 +1,38 @@
+package com.library.model;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Comparator;
 
+/**
+ * Classe représentant un livre
+ */
 public class Book {
-
     private String title;
     private String author;
     private int year;
     private final String isbn;
 
-    // TODO 1 : Créer un constructeur
-    public Book(String title, String author, int year, String isbn) {
+    /**
+     * Constructeur d'un livre
+     * @param title Titre du livre
+     * @param author Auteur du livre
+     * @param year Année de publication
+     * @param isbn ISBN du livre (immuable)
+     */
+    @JsonCreator
+    public Book(
+            @JsonProperty("title") String title,
+            @JsonProperty("author") String author,
+            @JsonProperty("year") int year,
+            @JsonProperty("isbn") String isbn) {
         this.title = title;
         this.author = author;
         this.year = year;
         this.isbn = isbn;
     }
 
-    // TODO 2 : Créer les getters
+    // Getters
     public String getTitle() {
         return title;
     }
@@ -32,7 +49,6 @@ public class Book {
         return isbn;
     }
 
-    // TODO 3 : Redéfinir toString()
     @Override
     public String toString() {
         return "Book{" +
@@ -56,7 +72,9 @@ public class Book {
         return isbn.hashCode();
     }
 
-    // Comparateurs pour trier des listes de livres
+    /**
+     * Comparateurs utilitaires pour trier les livres.
+     */
     public static final Comparator<Book> TITLE_COMPARATOR = new TitleComparator();
     public static final Comparator<Book> AUTHOR_COMPARATOR = new AuthorComparator();
 
